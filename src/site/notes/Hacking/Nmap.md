@@ -20,6 +20,14 @@ nmap -sC -p 22,80 -oA script_scan <IP>
 nmap -sV --script=http-enum <IP>
 ```
 
+```shell
+nmap -sV --script=banner <IP>
+```
+Banner Grabbing pro identifikaci služeb na portech
+```shell
+nmap --script smb-os-discovery.nse -p445 <IP>
+```
+Využije Nmap skript k vytažení přesné verze OS skrze službu [[Hacking/SMB\|SMB]]
 
 | Přepínač (Switch) | Popis v kontextu zadání                                                                   |
 | ----------------- | ----------------------------------------------------------------------------------------- |
